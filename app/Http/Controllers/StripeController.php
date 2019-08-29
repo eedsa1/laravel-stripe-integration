@@ -12,8 +12,8 @@ class StripeController extends Controller
 
 	public function __construct(){
 		//para ir para o modo live é necessário substituir as chaves pelas do modo live
-		$this->secretkey = "sk_test_xhUK629AQcOp4AqmXDiHUQER";
-		$this->publishableKey = "pk_test_rOSEcgdKPdwldxOssVVZ4SDg";
+		$this->secretkey = "yourcode";
+		$this->publishableKey = "yourcode";
 
 		\Stripe\Stripe::setApiKey($this->secretkey);
 		\Stripe\Stripe::setVerifySslCerts(false);
